@@ -9,7 +9,7 @@ const {
   joiUpdateActualUserInfo,
 } = require('../middlewares/joiValidation');
 
-usersRouter.get('/users', getActualUserInfo);
+usersRouter.get('/users/me', getActualUserInfo);
 usersRouter.patch('/users/me', joiUpdateActualUserInfo, updateActualUserInfo);
 
 module.exports = usersRouter;
