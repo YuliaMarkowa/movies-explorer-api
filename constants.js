@@ -4,7 +4,7 @@ const regPassword = /^[a-zA-Z0-9]{6,}$/;
 const messageError = {
   badRequestError: 'Данные не прошли валидацию',
   notFoundError: 'Карточка с фильмом отсутствует',
-  forbiddenError: 'Невозможно удалить карточку',
+  forbiddenError: 'Невозможно удалить неавторскую карточку',
   notValidRequest: 'Неправильный запрос',
   conflictingRequestError: 'Такая почта уже есть',
   outFoundError: 'Пользователь не найден',
@@ -12,7 +12,7 @@ const messageError = {
 };
 
 const messageLuck = {
-  removeCard: 'Карточка удалена',
+  removeCard: 'Карточка с фильмом удалена',
   register: 'Регистрация выполнена с успехом',
 };
 
